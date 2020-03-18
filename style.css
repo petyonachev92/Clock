@@ -41,15 +41,19 @@ body {
 
 .clock .number1 {--rotation: 30deg;}
 .clock .number2 {--rotation: 60deg;}
-.clock .number3 {--rotation: 90deg;}
+.clock .number3 {top: 46%;
+left: 45%;}
 .clock .number4 {--rotation: 120deg;}
 .clock .number5 {--rotation: 150deg;}
-.clock .number6 {--rotation: 180deg;}
+.clock .number6 {top: 89%;}
 .clock .number7 {--rotation: 210deg;}
 .clock .number8 {--rotation: 240deg;}
-.clock .number9 {--rotation: 270deg;}
+.clock .number9 {top: 46%;
+right: 45%;}
 .clock .number10 {--rotation: 300deg;}
 .clock .number11 {--rotation: 330deg;}
+
+.number3{text-transform: rotate(-90deg);}
 
 .clock .hand {
     --rotation: 0;
@@ -98,9 +102,15 @@ body {
 }
 
 .date {
-    width: 1.5em;
+    width: 2em;
     height: 1.1em;
     background: white;
     border: 1px solid black;
-    top: 50%;
+    position: relative;
+    left: 70%;
+    top: 47%;
+    text-align: center;
+    font-family: sans-serif;
+    font-style: italic;
+    text-shadow: 1px 1px 0 #000;
 }

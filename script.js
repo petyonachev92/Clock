@@ -4,6 +4,7 @@ const hourHand = document.querySelector('[data-hour-hand]');
 const minuteHand = document.querySelector('[data-minute-hand]');
 const secondHand = document.querySelector('[data-second-hand]');
 
+
 function setClock(){
     const currentDate = new Date();
     const secondRatio = currentDate.getSeconds() / 60;
@@ -12,6 +13,7 @@ function setClock(){
     setRotation(secondHand, secondRatio);
     setRotation(minuteHand, minuteRatio);
     setRotation(hourHand, hourRatio);
+    document.querySelector('[date]').textContent = currentDate.getDate();
 }
 
 function setRotation(element, rotationRatio){
@@ -19,3 +21,4 @@ function setRotation(element, rotationRatio){
 }
 
 setClock();
+
